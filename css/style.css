@@ -1,0 +1,246 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    outline: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+body
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination
+{
+    width: 900px;
+    align-items: center;
+    flex-direction: column;
+}
+.pagination, .pagination > span:nth-child(2), .pageBtn
+{
+    display: flex;
+}
+.pagination > span
+{
+    line-height: 26px;
+    font-size: 14px;
+}
+.pagination > span:nth-child(2)
+{
+    margin: 10px 0 0;
+}
+.pagination > span:nth-child(3)
+{
+    margin: 10px 0;
+}
+.pagination > span:nth-child(1) > .selectBox
+{
+    width: 95.63px;
+}
+.pagination > span:nth-child(4) > .selectBox
+{
+    width: 114.06px;
+}
+.selectBox
+{
+    height: 26px;
+    padding: 0 10px;
+    background-color: rgba(0,0,0, .8);
+    border-radius: 6px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13.3333px;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.selectBox_radius
+{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.selectMaxRow, .selectMaxBtn
+{
+    display: none;
+    width: inherit;
+    background-color: rgba(0,0,0, .8);
+    backdrop-filter: blur(10px);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    position: absolute;
+    bottom: 26px;
+    left: 0;
+    z-index: 1;
+}
+.maxRow_maxBtn
+{
+    display: block;
+}
+.selectMaxRow span, .selectMaxBtn span
+{
+    display: block;
+    width: inherit;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13.3333px;
+    color: white;
+    cursor: pointer;
+}
+.selectMaxRow span:hover, .selectMaxBtn span:hover
+{
+    font-size: 14px;
+}
+.arrow
+{
+    width: 12px;
+    height: 8px;
+    margin: 0 0 0 6px;
+    transition: .2s;
+    position: relative;
+}
+.arrow_deg
+{
+    transform: rotate(180deg);
+}
+.arrow::before, .arrow::after
+{
+    content: '';
+    width: 8px;
+    height: 2px;
+    background-color: white;
+    border-radius: 1px;
+    position: absolute;
+    top: calc(50% - 1px);
+}
+.arrow::before
+{
+    transform: rotate(45deg);
+    left: 0;
+}
+.arrow::after
+{
+    transform: rotate(-45deg);
+    right: 0;
+}
+.prev, .next
+{
+    width: 26px;
+    height: 26px;
+    background-color: rgba(0,0,0, .8);
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+.prev:disabled, .next:disabled
+{
+    background-color: rgba(0,0,0, .1);
+    cursor: not-allowed;
+}
+.prev::before, .prev::after, .next::before, .next::after
+{
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: white;
+    border-radius: 1px;
+    position: absolute;
+    left: 8px;
+}
+.prev::before, .next::after
+{
+    transform: rotate(-45deg);
+}
+.prev::after, .next::before
+{
+    transform: rotate(45deg);
+}
+.prev::before, .next::before
+{
+    top: 35%;
+}
+.prev::after, .next::after
+{
+    bottom: 35%;
+}
+.pageBtn span
+{
+    min-width: 26px;
+    height: 26px;
+    margin: 0 0 0 6px;
+    padding: 0 6px;
+    background-color: rgba(0,0,0, .8);
+    border-radius: 6px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13.3333px;
+    color: white;
+    cursor: pointer;
+}
+.pageBtn span:last-child
+{
+    margin: 0 6px;
+}
+.pageBtn .active
+{
+    background-color: #ff6f66;
+}
+.page
+{
+    width: 100px;
+    height: 26px;
+    padding: 0 6px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0, .1);
+    text-align: center;
+}
+.go
+{
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    background-color: rgba(0,0,0, .8);
+    border-radius: 6px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 13.3333px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .selectMaxBtn
+{
+    display: block;
+} */

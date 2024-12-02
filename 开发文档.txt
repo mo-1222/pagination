@@ -1,0 +1,23 @@
+setDataRow = 10;            一页显示几条（几行）数据 请求数据行数 值是用户设置 如：10条/页
+totalData                   总数据 值从后台获取
+totalPage                   总页数 值通过计算得到 计算如下：totalPage = totalData / setDataRow
+
+
+setBtnGroup = 6;            按钮组 6个/组
+btnGroupPage = 1;           按钮页 1页/组
+btnActiveIndex = 0;         按钮高亮索引 0开始；如下：
+                                                    0 1 2 3 4 5     索引
+                                                    1 2 3 4 5 6     按钮
+
+
+
+
+
+
+
+
+
+
+
+
+
